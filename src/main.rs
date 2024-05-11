@@ -1,3 +1,6 @@
+
+
+use std::io;
 fn main(){
 /* 
     let mut a: u8 = 250;
@@ -16,7 +19,7 @@ fn main(){
     println!("{symbol}");
     println!("{logic}");
 */
-
+/* 
     let age: u16 = 101;
     if age >= 18{
         if age <= 100{
@@ -36,4 +39,11 @@ fn main(){
     }else{
         6
     };
+*/
+
+   let mut guess: String = String::new();
+   io::stdin().read_line(&mut guess).expect("Failed to read line");
+   print!("Your text: {}", guess);
+   io::stdin().read_line(&mut guess).expect("Failed to read line");
 }
+
